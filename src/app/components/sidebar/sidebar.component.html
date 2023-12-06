@@ -1,0 +1,5 @@
+<section class="w-[10rem] h-screen bg-transparent flex flex-col items-center py-6">
+ <section id="top-section" class="font-sans text-[1.15rem] text-white font-bold">
+  <a *ngFor="let nav of navItems" [routerLink]="nav.path" class="flex justify-start items-center gap-3 py-2"><i [ngClass]="nav.icon"></i>{{nav.title}}</a>
+ </section>
+</section>
